@@ -1,0 +1,22 @@
+Problem Statement:
+ Traditional robo-advisory systems often rely on rigid rule-based algorithms, generic market data interpretations, and outdated risk-profiling mechanisms. This results in investment recommendations that fail to adapt to rapidly changing market conditions or individual investor preferences. Additionally, most existing solutions struggle to integrate dynamic insights from both live financial data (e.g., stock and commodity prices) and nuanced investor sentiment, leading to generic portfolio allocations. Without interactive, personalized analysis, retail investors remain underserved, unable to access high-quality, adaptive advisory services similar to institutional offerings.
+Furthermore, market participants seeking to diversify across asset classes—such as stocks and gold—lack accessible tools that can synthesize real-time data, generate clear explanations, and simulate actionable trade instructions. Combined with the complexity of risk profiling and the absence of explainability, the gap between investor expectations and the capabilities of conventional robo-advisors has only widened.
+Solution Statement:
+ This project proposes an AI-driven, agent-based robo-advisory system that leverages IBM’s Granite large language models through the Watsonx AI platform. The solution is architected as a pipeline of specialized agents:
+Market Research Agent: generates dynamic, data-driven sentiment summaries using live market data for selected stocks (e.g., AAPL) and gold.
+
+
+Risk Profiling Agent: engages interactively with users to determine investment horizons and risk tolerances.
+
+
+Portfolio Recommendation Agent: synthesizes risk profiles and market insights to generate tailored asset allocations.
+
+
+Explanation Agent: simplifies recommendations for better investor understanding, enhancing transparency and trust.
+
+
+Trade Execution Agent: produces simulated, actionable trade instructions, bridging insights and implementation.
+
+
+An interactive Streamlit-based front-end enables users to specify their target stock symbol and receive personalized, explainable investment guidance. By orchestrating the Granite models, the system dynamically adapts to new market conditions and user profiles, providing both flexibility and precision. This modular, multi-agent architecture improves on static robo-advisors by ensuring real-time relevance, personalization, and clarity.
+The proposed system empowers retail investors with institutional-grade analysis and transparent decision support, democratizing access to sophisticated investment strategies. The combination of cutting-edge language models, live market data, and explainable AI closes the gap between individual investor needs and professional financial advice.
