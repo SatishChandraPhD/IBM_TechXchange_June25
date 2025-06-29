@@ -1,0 +1,21 @@
+This project integrates IBM Granite large language models as the core intelligence powering its AI-driven robo-advisory system. IBM Granite models are accessed via the IBM Watsonx AI platform, using the ibm-watsonx-ai Python SDK for seamless API-based interactions. The system employs various Granite model variants (e.g., ibm/granite-3-8b-instruct, ibm/granite-3-2-8b-instruct) depending on the task and performance requirements.
+
+Granite models are utilized in the following key components:
+
+1️⃣ Market Research Agent
+Granite models interpret live market data (fetched via Yahoo Finance) and generate sentiment summaries for stocks (such as AAPL) and gold. The models analyze structured prompts containing current prices and produce human-like textual analysis of market sentiment, trends, and potential drivers.
+
+2️⃣ Risk Profiling Agent
+Granite models are used to generate interactive questions aimed at assessing the investor’s risk appetite. The model produces contextually appropriate and natural-language queries to engage the user and guide them through a risk assessment process.
+
+3️⃣ Portfolio Recommendation Agent
+Granite models synthesize market sentiment (from the Market Research Agent) and risk profile (from the Risk Profiling Agent) to recommend portfolio allocations between stocks and gold. The model generates both the allocation figures and reasoning, based on the provided input context.
+
+4️⃣ Explanation Agent
+Granite models rephrase technical portfolio recommendations into simplified, investor-friendly language. This enhances transparency and improves client understanding.
+
+5️⃣ Trade Execution Agent (Simulated)
+Granite models produce natural-language simulated trade instructions, assuming a portfolio value (e.g., $100,000). This demonstrates how recommendations might translate into actionable trades.
+
+The IBM Granite models thus serve as the generative backbone of the system, enabling high-quality, context-aware, and explainable outputs across all advisory functions. Their adaptability to structured prompts, reasoning tasks, and natural-language generation is central to the success of the project.
+
