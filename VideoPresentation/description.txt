@@ -1,0 +1,1 @@
+This video presenation does a walk through of the Robo Advvisor for Investment Portfolio management using the IBM Granite models for inference
